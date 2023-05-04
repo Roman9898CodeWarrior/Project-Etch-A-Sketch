@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Etch-A-Sketch Test</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="title"><h1>Project Etch-A-Sketch Test</h1></div>
+        <div class="content">
+            <div class="board"></div>
+            <div class="buttons">
+                <button class="black" onclick="changeColor('black')">Black</button>
+                <button class="white" onclick="changeColor('white')">Erasor</button>
+                <button class="random" onclick="changeColor('random')">Random</button>
+                <button class="reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div>
+            <input type="text" class="size-chenger" placeholder="Size of Board" value="16" onchange="changeSize(this.value)">
+            <button class="board-size">Set size</button>
+        </div>
+        <div class="mode">Mode: coloring</div>
+        <div class="warning"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
